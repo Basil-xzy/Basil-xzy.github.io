@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/index.css" type="text/css"  rel="stylesheet" >
+</head>
+<body>
+<div class="header">
+    <div></div>
+
+    <div><div id="content"><img src="img/xx_001/Header-1.jpg">
+        <img src="img/xx_001/Header-1.jpg">
+        <img src="img/xx_001/Header-1.jpg"></div></div>
+    <div>
+
+        <input type="button"  value="0" onclick="moveimg(0)" size="10%">
+        <input type="button"  value="1" onclick="moveimg(1)" size="10%">
+        <input type="button"  value="2" onclick="moveimg(2)" size="10%">
+        <div class="text">
+            /
+            <div id="text1"><span>(RED)</span><p>(RED) Redesign</p></div>
+            <div id="text2"><span>Starwood Hotels & Resorts</span><p>COLLECT THE WORLD’S EXPERIENCES</p></div>
+            <div id="text3"><span>Calvin Kleins</span><p>A FRAGRANCE FOR THE TWO OF US.</p></div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <ol class="o1">
+        <li><img src="img/xx_001/work-thumb-landscape.jpg"> </li>
+        <li>
+            <ol class="o1-1">
+                <li><div></div></li>
+                <li>
+                    <img src="img/xx_001/thumbnail_IGK-1.jpg">
+                    <img src="img/xx_001/thumbnail.jpg">
+                </li>
+            </ol>
+    </ol>
+    <ol class="o2">
+        <li>
+
+            <img src="img/xx_001/work-thumb.jpg">
+            <img src="img/xx_001/THUMB_3.jpg">
+            <div></div>
+        </li>
+        <li><div></div></li>
+    </ol>
+    <ol class="o3">
+            <li>
+                <div></div>
+                <img src="img/xx_001/THUMB_neaq_ret.jpg">
+                <img src="img/xx_001/THUMB_JFK_Ret_2.jpg">
+            </li>
+        <li><div></div></li>
+    </ol>
+</div>
+<div class="footer">
+    <div class="foonav1">
+        <img src="img/xx_001/nyc-timelapse-manhattan-bridge.jpg">
+    </div>
+    <div class="foonav2"></div>
+</div>
+</body>
+<script type="text/javascript">
+    function moveimg(pos){
+        var imgEle=document.getElementById("content");
+        var left=-100*pos;
+        imgEle.style.marginLeft=left+"%";
+        var text1=document.getElementById("text1");
+        var text2=document.getElementById("text2");
+        var text3=document.getElementById("text3");
+        if(pos=="0"){
+            text2.style.bottom="-90%";
+            text3.style.bottom="-90%";
+            text1.style.bottom="60%";
+        }
+        else if(pos=="1"){
+            text1.style.bottom="-90%";
+            text3.style.bottom="-90%";
+            text2.style.bottom="60%";
+        }
+        else if(pos=="2"){
+            text1.style.bottom="-90%";
+            text2.style.bottom="-90%";
+            text3.style.bottom="60%";
+        }
+    }
+
+
+</script>
+</html>
